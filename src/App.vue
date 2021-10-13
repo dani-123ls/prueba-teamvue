@@ -1,9 +1,5 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About </router-link> |
-    <router-link :to="{name:'Menu'}"> Menu</router-link> |
-  </div>
+ <NavBar/>
   <router-view/>
   
   <!-- <body>
@@ -34,3 +30,14 @@
   color: #42b983;
 }
 </style>
+
+<script type="text/javascript">
+import NavBar from "@/components/NavBar.vue";
+export default {
+  components: {
+    NavBar,
+  },
+};
+</script>
+
+
